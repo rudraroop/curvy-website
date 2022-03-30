@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Blob from './Blob'
+import Footer from './Footer'
+
+import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='App'>
+        <div className='orange'>
+          <h1>Curvy Website</h1>
+        </div>
+
+        <div className='spacer layer-1'></div>
+
+        <div className='second-text'>
+          <h2>What is the purpose of this?</h2>
+          <p>There is none</p>
+        </div>
+
+        <div className='spacer layer-2'></div>
+
+        <Blob />
+
+        <div className='spacer layer-3'></div>
+
+        <Footer />
+        
+      </div>
+    </>
   );
 }
 
